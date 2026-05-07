@@ -1,9 +1,9 @@
 === Graceful ===
 Contributors: aslamnaik
 Requires at least: 5.3
-Tested up to: 6.5
+Tested up to: 6.9
 Requires PHP: 5.6
-Stable tag: 1.0.4
+Stable tag: 1.0.5
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: blog, one-column, two-columns, three-columns, right-sidebar, custom-menu, custom-logo, featured-images, footer-widgets, theme-options
@@ -71,6 +71,10 @@ License URL: https://stocksnap.io/license
 https://stocksnap.io/photo/snowy-mountains-H2ALENWLHR
 
 == Changelog ==
+
+= 1.0.5 =
+* Added: X (Twitter) social media icon option
+* Tested upto WordPress 6.9
 
 = 1.0.4 =
 * Fixed styles

@@ -33,6 +33,7 @@
 
 	// Social Icons Array
 	$graceful_social_icons = array(
+		'x-twitter' 			=> 'X (Twitter)',
 		'twitter' 				=> '&#xf099;',
 		'twitter-square' 		=> '&#xf081;',
 		'instagram' 			=> '&#xf16d;',
