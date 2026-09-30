@@ -381,24 +381,4 @@ if ( ! function_exists( 'graceful_site_menu_fallback' ) ) :
 		}
 	}
 
-endif; // Main Menu Fallback
-
-
-/**
-** Notice after the Theme Activation
-*/
-if ( ! function_exists( 'graceful_activation_notice' ) ) :
-
-	function graceful_activation_notice() {
-	?>
-		<div class="notice notice-success is-dismissible">
-			<h3><?php esc_html_e( 'Congratulations!', 'graceful' ) ?></h3>
-			<strong><?php esc_html_e( 'Graceful Theme ', 'graceful' ) ?></strong>
-			<span><?php esc_html_e( 'is now installed and ready to use.', 'graceful' ) ?></span>
-			<p><?php esc_html_e( 'Click below to see theme documentation, plugins to install and other details to get started.', 'graceful' ) ?></p>
-			<p><a href="<?php echo esc_url( admin_url( 'themes.php?page=about-theme' ) ) ?>" class="button button-primary"><?php esc_html_e( 'Get Started with Graceful Theme', 'graceful' ) ?></a></p>
-		</div>
-	<?php
-	}
-
-endif; // Notice Theme Activation
+endif; // Main Menu Fallback

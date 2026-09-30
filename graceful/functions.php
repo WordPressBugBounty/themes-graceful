@@ -80,13 +80,6 @@ function graceful_setup() {
 		)
 	);
 
-	// Theme Activation Notice
-	global $pagenow;
-	
-	if ( is_admin() && ('themes.php' == $pagenow) && isset( $_GET['activated'] ) ) {
-		add_action( 'admin_notices', 'graceful_activation_notice' );
-	}
-
 	// Enables support for post-thumbnails on post and pages
 	add_theme_support( 'post-thumbnails' );
 
@@ -269,6 +262,14 @@ require get_template_directory() . '/inc/customizer/customizer.php';
 ** Customizer Controlled Dynamic Inline Styles
 */
 require get_template_directory() . '/inc/dynamic-styles.php';
+
+/*
+** Plugin Install Helper & Welcome Notice
+*/
+require get_template_directory() . '/inc/admin/plugin-install-helper.php';
+if ( is_admin() ) {
+	require get_template_directory() . '/inc/admin/welcome-notice.php';
+}
 
 /*
 ** About Graceful Theme Dashboard

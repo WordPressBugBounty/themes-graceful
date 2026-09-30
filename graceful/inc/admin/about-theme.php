@@ -6,17 +6,34 @@
  */
 
 function graceful_about_page_dashboard() {
-	add_theme_page( esc_html__( 'About Graceful Theme', 'graceful' ), esc_html__( 'Graceful Theme', 'graceful' ), 'edit_theme_options', 'about-theme', 'display_graceful_about_page', 1 );
+	$theme_name = wp_get_theme()->get( 'Name' );
+	/* translators: %s: Theme name */
+	$page_title = sprintf( esc_html__( 'About %s Theme', 'graceful' ), $theme_name );
+	/* translators: %s: Theme name */
+	$menu_title = sprintf( esc_html__( '%s Theme', 'graceful' ), $theme_name );
+	add_theme_page( $page_title, $menu_title, 'edit_theme_options', 'about-theme', 'display_graceful_about_page', 1 );
 }
 add_action( 'admin_menu', 'graceful_about_page_dashboard' );
 
 // Display About Graceful page
 function display_graceful_about_page() {
+	$theme_name = wp_get_theme()->get( 'Name' );
 ?>
 	<div class="wrap">
-		<h1><?php esc_html_e( 'Welcome to Graceful!', 'graceful' ); ?></h1>
+		<h1>
+			<?php
+			/* translators: %s: Theme name */
+			printf( esc_html__( 'Welcome to %s!', 'graceful' ), esc_html( $theme_name ) );
+			?>
+		</h1>
 		<p class="welcome-text">
-			<?php esc_html_e( 'Graceful is a free multi-purpose WordPress Blog theme. Its perfect for any kind of blog or website: personal, professional, tech, fashion, travel, health, lifestyle, food, blogging etc. Its fully Responsive and Retina Display ready, clean, modern and minimal design. Graceful is WooCommerce compatible, SEO friendly and also has RTL support.', 'graceful' ); ?>
+			<?php
+			/* translators: %s: Theme name */
+			printf(
+				esc_html__( '%s is a free multi-purpose WordPress Blog theme. Its perfect for any kind of blog or website: personal, professional, tech, fashion, travel, health, lifestyle, food, blogging etc. Its fully Responsive and Retina Display ready, clean, modern and minimal design. It is WooCommerce compatible, SEO friendly and also has RTL support.', 'graceful' ),
+				esc_html( $theme_name )
+			);
+			?>
 		</p>
 
 		<!-- Tabs -->
@@ -36,8 +53,6 @@ function display_graceful_about_page() {
 
 			<div class="three-columns-wrap">
 
-				<br>
-
 				<div class="column-width-3">
 					<h3><?php esc_html_e( 'Theme Customizer', 'graceful' ); ?></h3>
 					<p>
@@ -48,9 +63,29 @@ function display_graceful_about_page() {
 
 				<div class="column-width-3">
 					<h3><?php esc_html_e( 'Recommended Plugins', 'graceful' ); ?></h3>
-					<p><?php esc_html_e( 'Graceful theme provides full support for Recommended Plugins, styling them to seamlessly blend with the themes design and ensure optimal performance. Optional, yet advantageous.', 'graceful' ); ?></p>
+					<p>
+						<?php
+						/* translators: %s: Theme name */
+						printf(
+							esc_html__( '%s theme provides full support for Recommended Plugins, styling them to seamlessly blend with the themes design and ensure optimal performance. Optional, yet advantageous.', 'graceful' ),
+							esc_html( $theme_name )
+						);
+						?>
+					</p>
 					<?php
 					echo '<p><a href="'. esc_url( admin_url( 'themes.php?page=tgmpa-install-plugins&plugin_status=install' ) ) .'" class="button button-primary">'. esc_html__( 'Install Recommended Plugins', 'graceful' ) .'</a></p>';
+					?>
+				</div>
+
+				<div class="column-width-3">
+					<h3><?php esc_html_e( 'Companion Plugin', 'graceful' ); ?></h3>
+					<p><?php esc_html_e( 'Install and activate Graceful Extra to unlock post reading time, post views counter, customizable floating back-to-top button, and per-post layout controls.', 'graceful' ); ?></p>
+					<?php
+					if ( class_exists( 'Graceful_Plugin_Install' ) ) {
+						echo '<p>';
+						Graceful_Plugin_Install::install_plugin_button( 'graceful-extra', 'graceful-extra.php', 'Graceful Extra' );
+						echo '</p>';
+					}
 					?>
 				</div>
 
@@ -347,5 +382,14 @@ function enqueue_about_graceful_page_scripts($hook) {
 	// enqueue CSS
 	wp_enqueue_style( 'about-theme-css', get_theme_file_uri( '/inc/admin/css/about-theme.css' ) );
 
+	// enqueue JS for 1-click install
+	wp_enqueue_script( 'graceful-admin-js', get_theme_file_uri( '/inc/admin/js/graceful-admin.js' ), array( 'jquery', 'updates' ), wp_get_theme()->get( 'Version' ), true );
+	wp_localize_script(
+		'graceful-admin-js',
+		'gracefulAdminL10n',
+		array(
+			'nonce' => wp_create_nonce( 'graceful_notice_dismiss' ),
+		)
+	);
 }
 add_action( 'admin_enqueue_scripts', 'enqueue_about_graceful_page_scripts' );

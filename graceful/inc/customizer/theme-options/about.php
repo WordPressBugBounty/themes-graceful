@@ -62,3 +62,73 @@
 			)
 		)
 	);
+
+	// Recommend Graceful Extra Companion Plugin if not active.
+	if ( ! function_exists( 'graceful_extra_is_activated' ) || ! graceful_extra_is_activated() ) {
+
+		if ( class_exists( 'WP_Customize_Control' ) && ! class_exists( 'Graceful_Extra_Recommend_Control' ) ) {
+			/**
+			 * Customizer control to recommend and install Graceful Extra.
+			 */
+			class Graceful_Extra_Recommend_Control extends WP_Customize_Control {
+				public $type = 'graceful_extra_recommend';
+
+				public function render_content() {
+					?>
+					<div class="graceful-extra-customizer-recommend" style="padding: 10px 0;">
+						<p style="font-size: 13px; line-height: 1.5; color: #50575e;">
+							<?php
+							echo wp_kses_post(
+								sprintf(
+									/* translators: %s: Plugin name */
+									__( 'To unlock reading time, post views counter, customizable floating back-to-top button, and per-post layout controls, install and activate %s plugin.', 'graceful' ),
+									'<strong>' . esc_html__( 'Graceful Extra', 'graceful' ) . '</strong>'
+								)
+							);
+							?>
+						</p>
+						<p style="margin-top: 15px;">
+							<?php
+							if ( class_exists( 'Graceful_Plugin_Install' ) ) {
+								Graceful_Plugin_Install::install_plugin_button(
+									'graceful-extra',
+									'graceful-extra.php',
+									'Graceful Extra',
+									array( 'button-primary', 'widefat' )
+								);
+							}
+							?>
+						</p>
+					</div>
+					<?php
+				}
+			}
+		}
+
+		$wp_customize->add_section(
+			'graceful_extra_recommend',
+			array(
+				'title'       => esc_html__( 'Recommended: Graceful Extra', 'graceful' ),
+				'priority'    => 0,
+				'capability'  => 'edit_theme_options',
+			)
+		);
+
+		$wp_customize->add_setting(
+			'graceful_extra_recommend_setting',
+			array(
+				'sanitize_callback' => 'graceful_sanitize_custom_controller',
+			)
+		);
+
+		$wp_customize->add_control(
+			new Graceful_Extra_Recommend_Control(
+				$wp_customize,
+				'graceful_extra_recommend_setting',
+				array(
+					'section'  => 'graceful_extra_recommend',
+					'priority' => 1,
+				)
+			)
+		);
+	}

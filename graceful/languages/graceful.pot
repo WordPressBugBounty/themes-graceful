@@ -1,10 +1,10 @@
-# Copyright (C) 2024 Optima Themes
+# Copyright (C) 2026 Optima Themes
 # This file is distributed under the GNU General Public License v2 or later.
 msgid ""
 msgstr ""
 "Project-Id-Version: graceful\n"
 "Report-Msgid-Bugs-To: https://optimathemes.com/\n"
-"POT-Creation-Date: 2024-05-08 22:24+0530\n"
+"POT-Creation-Date: 2026-09-29 21:24+0530\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -47,35 +47,35 @@ msgstr ""
 msgid "Main Menu"
 msgstr ""
 
-#: functions.php:190
+#: functions.php:183
 msgid "Sidebar Right"
 msgstr ""
 
-#: functions.php:192
+#: functions.php:185
 msgid "Add widgets here, for right sidebar."
 msgstr ""
 
-#: functions.php:202
+#: functions.php:195
 msgid "Sidebar Left"
 msgstr ""
 
-#: functions.php:204
+#: functions.php:197
 msgid "Add widgets here, for left sidebar."
 msgstr ""
 
-#: functions.php:214 inc/admin/about-theme.php:196
+#: functions.php:207 inc/admin/about-theme.php:231
 msgid "Sidebar Slide Menu"
 msgstr ""
 
-#: functions.php:216
+#: functions.php:209
 msgid "Add widgets here, for slide menu sidebar."
 msgstr ""
 
-#: functions.php:226
+#: functions.php:219
 msgid "Footer Widgets"
 msgstr ""
 
-#: functions.php:228
+#: functions.php:221
 msgid "Add widgets here, for the footer."
 msgstr ""
 
@@ -108,355 +108,398 @@ msgstr ""
 msgid "Set-up Main Menu"
 msgstr ""
 
-#: inc/template-functions.php:395
-msgid "Congratulations!"
+#: inc/admin/about-theme.php:11
+#, php-format
+msgid "About %s Theme"
 msgstr ""
 
-#: inc/template-functions.php:396
-msgid "Graceful Theme "
+#: inc/admin/about-theme.php:13
+#, php-format
+msgid "%s Theme"
 msgstr ""
 
-#: inc/template-functions.php:397
-msgid "is now installed and ready to use."
+#: inc/admin/about-theme.php:26
+#, php-format
+msgid "Welcome to %s!"
 msgstr ""
 
-#: inc/template-functions.php:398
+#: inc/admin/about-theme.php:33
+#, php-format
 msgid ""
-"Click below to see theme documentation, plugins to install and other details "
-"to get started."
-msgstr ""
-
-#: inc/template-functions.php:399
-msgid "Get Started with Graceful Theme"
-msgstr ""
-
-#: inc/admin/about-theme.php:9
-msgid "About Graceful Theme"
-msgstr ""
-
-#: inc/admin/about-theme.php:9
-msgid "Graceful Theme"
-msgstr ""
-
-#: inc/admin/about-theme.php:17
-msgid "Welcome to Graceful!"
-msgstr ""
-
-#: inc/admin/about-theme.php:19
-msgid ""
-"Graceful is a free multi-purpose WordPress Blog theme. Its perfect for any "
-"kind of blog or website: personal, professional, tech, fashion, travel, "
-"health, lifestyle, food, blogging etc. Its fully Responsive and Retina "
-"Display ready, clean, modern and minimal design. Graceful is WooCommerce "
-"compatible, SEO friendly and also has RTL support."
-msgstr ""
-
-#: inc/admin/about-theme.php:27
-msgid "Getting Started"
-msgstr ""
-
-#: inc/admin/about-theme.php:30 inc/admin/about-theme.php:95
-msgid "Graceful Pro"
-msgstr ""
-
-#: inc/admin/about-theme.php:42
-msgid "Theme Customizer"
+"%s is a free multi-purpose WordPress Blog theme. Its perfect for any kind of "
+"blog or website: personal, professional, tech, fashion, travel, health, "
+"lifestyle, food, blogging etc. Its fully Responsive and Retina Display "
+"ready, clean, modern and minimal design. It is WooCommerce compatible, SEO "
+"friendly and also has RTL support."
 msgstr ""
 
 #: inc/admin/about-theme.php:44
+msgid "Getting Started"
+msgstr ""
+
+#: inc/admin/about-theme.php:47 inc/admin/about-theme.php:130
+msgid "Graceful Pro"
+msgstr ""
+
+#: inc/admin/about-theme.php:57
+msgid "Theme Customizer"
+msgstr ""
+
+#: inc/admin/about-theme.php:59
 msgid ""
 "Find all theme options conveniently located here. Once you have reviewed the "
 "Theme Documentation, we suggest opening the Theme Customizer to experiment "
 "with various settings. It will be an enjoyable experience!"
 msgstr ""
 
-#: inc/admin/about-theme.php:46
+#: inc/admin/about-theme.php:61
 msgid "Customize Your Site"
 msgstr ""
 
-#: inc/admin/about-theme.php:50
+#: inc/admin/about-theme.php:65
 msgid "Recommended Plugins"
 msgstr ""
 
-#: inc/admin/about-theme.php:51
+#: inc/admin/about-theme.php:70
+#, php-format
 msgid ""
-"Graceful theme provides full support for Recommended Plugins, styling them "
-"to seamlessly blend with the themes design and ensure optimal performance. "
+"%s theme provides full support for Recommended Plugins, styling them to "
+"seamlessly blend with the themes design and ensure optimal performance. "
 "Optional, yet advantageous."
 msgstr ""
 
-#: inc/admin/about-theme.php:53
+#: inc/admin/about-theme.php:76
 msgid "Install Recommended Plugins"
 msgstr ""
 
-#: inc/admin/about-theme.php:59
+#: inc/admin/about-theme.php:81
+msgid "Companion Plugin"
+msgstr ""
+
+#: inc/admin/about-theme.php:82
+msgid ""
+"Install and activate Graceful Extra to unlock post reading time, post views "
+"counter, customizable floating back-to-top button, and per-post layout "
+"controls."
+msgstr ""
+
+#: inc/admin/about-theme.php:94
 msgid "Graceful Pro Version"
 msgstr ""
 
-#: inc/admin/about-theme.php:62
+#: inc/admin/about-theme.php:97
 msgid ""
 "Graceful Pro version is a premium multi-purpose WordPress theme with "
 "additional Pro Features."
 msgstr ""
 
-#: inc/admin/about-theme.php:64
+#: inc/admin/about-theme.php:99
 msgid "Check Graceful Pro Version"
 msgstr ""
 
-#: inc/admin/about-theme.php:71
+#: inc/admin/about-theme.php:106
 msgid "Documentation"
 msgstr ""
 
-#: inc/admin/about-theme.php:74
+#: inc/admin/about-theme.php:109
 msgid ""
 "Require additional information? Explore our documentation for guidance on "
 "utilizing Graceful to its fullest potential."
 msgstr ""
 
-#: inc/admin/about-theme.php:76
+#: inc/admin/about-theme.php:111
 msgid "Read Full Documentation"
 msgstr ""
 
-#: inc/admin/about-theme.php:91 inc/admin/about-theme.php:285
+#: inc/admin/about-theme.php:126 inc/admin/about-theme.php:320
 msgid "Get Graceful Pro"
 msgstr ""
 
-#: inc/admin/about-theme.php:94
+#: inc/admin/about-theme.php:129
 msgid "Graceful Free"
 msgstr ""
 
-#: inc/admin/about-theme.php:101
+#: inc/admin/about-theme.php:136
 msgid "Responsive and Retina Ready"
 msgstr ""
 
-#: inc/admin/about-theme.php:102
+#: inc/admin/about-theme.php:137
 msgid ""
 "Enjoy a fully responsive design that adapts seamlessly to any device screen, "
 "including high-resolution Retina displays."
 msgstr ""
 
-#: inc/admin/about-theme.php:109
+#: inc/admin/about-theme.php:144
 msgid "Translation Ready"
 msgstr ""
 
-#: inc/admin/about-theme.php:110
+#: inc/admin/about-theme.php:145
 msgid ""
 "Easily translate every element of the theme, as it comes with language "
 "support and includes an \"graceful.pot\" file for effortless translation."
 msgstr ""
 
-#: inc/admin/about-theme.php:117
+#: inc/admin/about-theme.php:152
 msgid "RTL Support"
 msgstr ""
 
-#: inc/admin/about-theme.php:118
+#: inc/admin/about-theme.php:153
 msgid ""
 "Catering to languages that are read from right to left, such as Arabic and "
 "Hebrew, the theme provides an RTL stylesheet for proper content adaptation."
 msgstr ""
 
-#: inc/admin/about-theme.php:125
+#: inc/admin/about-theme.php:160
 msgid "WooCommerce Integration"
 msgstr ""
 
-#: inc/admin/about-theme.php:126
+#: inc/admin/about-theme.php:161
 msgid ""
 "Seamlessly integrate the best eCommerce solution for WordPress websites, "
 "allowing you to create your own shop and sell a wide range of products, from "
 "digital goods to books."
 msgstr ""
 
-#: inc/admin/about-theme.php:133
+#: inc/admin/about-theme.php:168
 msgid "Contact Form 7 Support"
 msgstr ""
 
-#: inc/admin/about-theme.php:134
+#: inc/admin/about-theme.php:169
 msgid ""
 "Enjoy compatibility with the popular Contact Form 7 plugin, enabling you to "
 "create versatile and customizable contact forms easily."
 msgstr ""
 
-#: inc/admin/about-theme.php:141
+#: inc/admin/about-theme.php:176
 msgid "Image & Text Logos"
 msgstr ""
 
-#: inc/admin/about-theme.php:142
+#: inc/admin/about-theme.php:177
 msgid ""
 "Personalize your websites branding by either uploading a custom logo image "
 "(with adjustable size) or using a text-based logo."
 msgstr ""
 
-#: inc/admin/about-theme.php:143 inc/admin/about-theme.php:154
-#: inc/admin/about-theme.php:209
+#: inc/admin/about-theme.php:178 inc/admin/about-theme.php:189
+#: inc/admin/about-theme.php:244
 msgid "Pro Version:"
 msgstr ""
 
-#: inc/admin/about-theme.php:143
+#: inc/admin/about-theme.php:178
 msgid "Adjust position of Logo to fit custom header design."
 msgstr ""
 
-#: inc/admin/about-theme.php:151
+#: inc/admin/about-theme.php:186
 msgid "Posts Slider"
 msgstr ""
 
-#: inc/admin/about-theme.php:152
+#: inc/admin/about-theme.php:187
 msgid ""
 "Display up to 3 random blog posts in the header area with a visually "
 "appealing slider."
 msgstr ""
 
-#: inc/admin/about-theme.php:154
+#: inc/admin/about-theme.php:189
 msgid ""
 "Unlimited Slides. Feature specific posts and order by date or random. Set as "
 "Autoplay and enable or disable elements with more control."
 msgstr ""
 
-#: inc/admin/about-theme.php:162
+#: inc/admin/about-theme.php:197
 msgid "Background Image/Color"
 msgstr ""
 
-#: inc/admin/about-theme.php:163
+#: inc/admin/about-theme.php:198
 msgid ""
 "Customize the body background by either setting a custom image or choosing a "
 "specific color."
 msgstr ""
 
-#: inc/admin/about-theme.php:171
+#: inc/admin/about-theme.php:206
 msgid "Classic Layout"
 msgstr ""
 
-#: inc/admin/about-theme.php:172
+#: inc/admin/about-theme.php:207
 msgid ""
 "Opt for the standard one-column blog feed layout for a clean and timeless "
 "look."
 msgstr ""
 
-#: inc/admin/about-theme.php:179
+#: inc/admin/about-theme.php:214
 msgid "Multi-level Sub Menu Support"
 msgstr ""
 
-#: inc/admin/about-theme.php:180
+#: inc/admin/about-theme.php:215
 msgid ""
 "Create submenus with multiple levels to accommodate complex navigation "
 "structures."
 msgstr ""
 
-#: inc/admin/about-theme.php:187
+#: inc/admin/about-theme.php:222
 msgid "Left & Right Sidebars"
 msgstr ""
 
-#: inc/admin/about-theme.php:188
+#: inc/admin/about-theme.php:223
 msgid ""
 "Widgetized areas on the left and right sides, which can be enabled or "
 "disabled globally."
 msgstr ""
 
-#: inc/admin/about-theme.php:197
+#: inc/admin/about-theme.php:232
 msgid ""
 "An alternative widgetized sidebar that remains hidden by default and appears "
 "upon clicking."
 msgstr ""
 
-#: inc/admin/about-theme.php:206
+#: inc/admin/about-theme.php:241
 msgid "Special Links (Feature Boxes)"
 msgstr ""
 
-#: inc/admin/about-theme.php:207
+#: inc/admin/about-theme.php:242
 msgid ""
 "Display up to 5 eye-catching linked images beneath the header, serving as "
 "custom page links or banners/ads."
 msgstr ""
 
-#: inc/admin/about-theme.php:209
+#: inc/admin/about-theme.php:244
 msgid "Upto 5 Special Links."
 msgstr ""
 
-#: inc/admin/about-theme.php:217
+#: inc/admin/about-theme.php:252
 msgid "One-Click Demo Import"
 msgstr ""
 
-#: inc/admin/about-theme.php:218
+#: inc/admin/about-theme.php:253
 msgid ""
 "With just a single click, you can import the exact content displayed on our "
 "demo website. This includes menus, posts, pages, widgets, and more."
 msgstr ""
 
-#: inc/admin/about-theme.php:225
+#: inc/admin/about-theme.php:260
 msgid "Customizable Colors"
 msgstr ""
 
-#: inc/admin/about-theme.php:226
+#: inc/admin/about-theme.php:261
 msgid ""
 "Unlimited color options to personalize your header, content, and footer "
 "independently, allowing you to create a unique look and feel."
 msgstr ""
 
-#: inc/admin/about-theme.php:233
+#: inc/admin/about-theme.php:268
 msgid "Extensive Google Fonts Collection"
 msgstr ""
 
-#: inc/admin/about-theme.php:234
+#: inc/admin/about-theme.php:269
 msgid ""
 "Choose from over 300 Google Fonts, giving you a wide range of typography "
 "options. Adjust font size, font weight etc. to achieve the perfect style."
 msgstr ""
 
-#: inc/admin/about-theme.php:241
+#: inc/admin/about-theme.php:276
 msgid "Social Media Sharing Icons"
 msgstr ""
 
-#: inc/admin/about-theme.php:242
+#: inc/admin/about-theme.php:277
 msgid ""
 "Options to share your blog posts on popular social media platforms such as "
 "Twitter, Facebook, Pinterest, Linkedin, etc."
 msgstr ""
 
-#: inc/admin/about-theme.php:249
+#: inc/admin/about-theme.php:284
 msgid "Sticky Navigation"
 msgstr ""
 
-#: inc/admin/about-theme.php:250
+#: inc/admin/about-theme.php:285
 msgid ""
 "Keep your main navigation fixed at the top of the page for easy access and "
 "enhanced user experience."
 msgstr ""
 
-#: inc/admin/about-theme.php:257
+#: inc/admin/about-theme.php:292
 msgid "Instagram Widget Area"
 msgstr ""
 
-#: inc/admin/about-theme.php:258
+#: inc/admin/about-theme.php:293
 msgid ""
 "Display your Instagram Images in a dedicated widget area located in the "
 "footer of your website, to showcase recent photos."
 msgstr ""
 
-#: inc/admin/about-theme.php:265
+#: inc/admin/about-theme.php:300
 msgid "JetPack Integration"
 msgstr ""
 
-#: inc/admin/about-theme.php:266
+#: inc/admin/about-theme.php:301
 msgid ""
 "Take advantage of the comprehensive toolkit provided by Jetpack for "
 "WordPress. Secure and grow your site using this all-in-one bundle."
 msgstr ""
 
-#: inc/admin/about-theme.php:273
+#: inc/admin/about-theme.php:308
 msgid "Gracefulg Pro Widgets"
 msgstr ""
 
-#: inc/admin/about-theme.php:274
+#: inc/admin/about-theme.php:309
 msgid ""
 "Benefit from a range of professional widgets including Graceful Author, Ads, "
 "and Social Icons, enhancing the functionality and appearance of your website."
 msgstr ""
 
-#: inc/admin/about-theme.php:325
+#: inc/admin/about-theme.php:360
 msgid "Installed"
 msgstr ""
 
-#: inc/admin/about-theme.php:328
+#: inc/admin/about-theme.php:363
 msgid "Install Now"
+msgstr ""
+
+#: inc/admin/plugin-install-helper.php:57
+msgid "Activated"
+msgstr ""
+
+#: inc/admin/plugin-install-helper.php:66
+#, php-format
+msgid "Activate %s"
+msgstr ""
+
+#: inc/admin/plugin-install-helper.php:67
+#: inc/tgmpa/class-tgm-plugin-activation.php:2726
+msgid "Activate"
+msgstr ""
+
+#: inc/admin/plugin-install-helper.php:87
+#, php-format
+msgid "Install %s now"
+msgstr ""
+
+#: inc/admin/plugin-install-helper.php:88
+#: inc/tgmpa/class-tgm-plugin-activation.php:2717
+msgid "Install"
+msgstr ""
+
+#: inc/admin/plugin-install-helper.php:96
+msgid "Learn more"
+msgstr ""
+
+#: inc/admin/welcome-notice.php:131
+#, php-format
+msgid "Thank you for installing %s!"
+msgstr ""
+
+#: inc/admin/welcome-notice.php:139
+#, php-format
+msgid ""
+"To take full advantage of all the features this theme has to offer, please "
+"install and activate the %s plugin."
+msgstr ""
+
+#: inc/admin/welcome-notice.php:140 inc/customizer/theme-options/about.php:85
+msgid "Graceful Extra"
+msgstr ""
+
+#: inc/admin/welcome-notice.php:157
+#, php-format
+msgid "Get started with %s"
 msgstr ""
 
 #: inc/customizer/theme-options/about.php:16
@@ -490,6 +533,17 @@ msgstr ""
 
 #: inc/customizer/theme-options/about.php:47
 msgid "About Graceful Pro"
+msgstr ""
+
+#: inc/customizer/theme-options/about.php:84
+#, php-format
+msgid ""
+"To unlock reading time, post views counter, customizable floating back-to-"
+"top button, and per-post layout controls, install and activate %s."
+msgstr ""
+
+#: inc/customizer/theme-options/about.php:111
+msgid "Recommended: Graceful Extra"
 msgstr ""
 
 #: inc/customizer/theme-options/basic-layouts.php:9
@@ -723,7 +777,7 @@ msgstr ""
 
 #: inc/customizer/theme-options/post-slider.php:150
 #: inc/customizer/theme-options/single-page.php:135
-#: inc/customizer/theme-options/social-media.php:215
+#: inc/customizer/theme-options/social-media.php:216
 msgid "Slider Options"
 msgstr ""
 
@@ -759,24 +813,24 @@ msgstr ""
 msgid "Open Social Pages in New Window"
 msgstr ""
 
-#: inc/customizer/theme-options/social-media.php:78
-#: inc/customizer/theme-options/social-media.php:113
-#: inc/customizer/theme-options/social-media.php:147
-#: inc/customizer/theme-options/social-media.php:181
+#: inc/customizer/theme-options/social-media.php:79
+#: inc/customizer/theme-options/social-media.php:114
+#: inc/customizer/theme-options/social-media.php:148
+#: inc/customizer/theme-options/social-media.php:182
 msgid "Select Icon"
 msgstr ""
 
-#: inc/customizer/theme-options/social-media.php:94
-#: inc/customizer/theme-options/social-media.php:129
-#: inc/customizer/theme-options/social-media.php:163
-#: inc/customizer/theme-options/social-media.php:197
+#: inc/customizer/theme-options/social-media.php:95
+#: inc/customizer/theme-options/social-media.php:130
+#: inc/customizer/theme-options/social-media.php:164
+#: inc/customizer/theme-options/social-media.php:198
 msgid "Add Social Link"
 msgstr ""
 
-#: inc/customizer/theme-options/social-media.php:99
-#: inc/customizer/theme-options/social-media.php:134
-#: inc/customizer/theme-options/social-media.php:168
-#: inc/customizer/theme-options/social-media.php:202
+#: inc/customizer/theme-options/social-media.php:100
+#: inc/customizer/theme-options/social-media.php:135
+#: inc/customizer/theme-options/social-media.php:169
+#: inc/customizer/theme-options/social-media.php:203
 msgid "Complete Link"
 msgstr ""
 
@@ -1097,16 +1151,8 @@ msgstr ""
 msgid "Upgrade message from the plugin author:"
 msgstr ""
 
-#: inc/tgmpa/class-tgm-plugin-activation.php:2717
-msgid "Install"
-msgstr ""
-
 #: inc/tgmpa/class-tgm-plugin-activation.php:2723
 msgid "Update"
-msgstr ""
-
-#: inc/tgmpa/class-tgm-plugin-activation.php:2726
-msgid "Activate"
 msgstr ""
 
 #: inc/tgmpa/class-tgm-plugin-activation.php:2757

@@ -14,6 +14,11 @@ function graceful_register_required_plugins() {
 	$plugins = array(
 
 		array(
+			'name'      => 'Graceful Extra',
+			'slug'      => 'graceful-extra',
+			'required'  => false,
+		),
+		array(
 			'name'      => 'Woocommerce',
 			'slug'      => 'woocommerce',
 			'required'  => false,
